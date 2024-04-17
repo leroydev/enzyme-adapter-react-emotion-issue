@@ -4,7 +4,7 @@ import Home, { Button } from './index';
 describe('button', () => {
   it('should alert "Hello, Emotion!" when clicked', () => {
     const button = mount(
-      <div><Home /></div>
+      <Home />
     );
 
     const alertSpy = jest.spyOn(window, 'alert').mockImplementation();
